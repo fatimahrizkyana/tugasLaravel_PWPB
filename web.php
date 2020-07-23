@@ -32,3 +32,7 @@ Route::get('/cv', function () {
 Route::get('/portfolio', function () {
     return view('portfolio');
 });
+
+route::get('data/{nama}', function($nama){
+    return "nama : $nama";
+});
